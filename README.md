@@ -8,15 +8,20 @@ LCD display so that my grandmother can see what day it is
 while taking her medication, to avoid double-dosing while
 using a weekday pill box.  It's a clean, simple clock for 
 the forgetful!  Many clocks show the weekday, but they are
-dim, cluttered with other information, and optimized for 
-battery life.
+optimized for battery life with dim LCDs, and are cluttered 
+with extra information.
 
-Instructions:
-Upload this sketch, then open a serial monitor at 9600 baud
-to set the clock.  If you don't use the OSEPP LCD shield,
-you will need to reconfigure LCD pinouts as appropriate.
+You will need:
+- Arduino Uno
+- 16x2 LCD module
+- DS3231 RTC module
+
+Notes:
+If you don't use the OSEPP LCD shield, you may need to 
+reconfigure LCD pinouts as appropriate.
 
 Features to add:
-- RTC support for DS3231 module
+- RTC support for DS3231 module (done)
+  - RTC module interrupt to save battery
 - Motion-activated backlight with PIR sensor
   - Investigate battery power once backlight can turn off
