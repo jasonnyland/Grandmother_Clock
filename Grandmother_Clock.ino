@@ -36,7 +36,6 @@ void setup() {
   pinMode(backlight_pin, INPUT);  // set as INPUT for full brightness, OUTPUT to adjust
   // analogWrite(backlight_pin, 200); // backlight contrast (0-255) comment line out when INPUT
 
-  Serial.begin(9600);
 
   lcd.begin(16, 2);              // start the library
   lcd.setCursor(0, 0);
@@ -114,5 +113,11 @@ void loop() {
   }
 
 
+/* Debug Date
+lcd.setCursor(0, 1);
+lcd.print(month());
+lcd.print(day());
+lcd.print(year());
+*/
 }
 
