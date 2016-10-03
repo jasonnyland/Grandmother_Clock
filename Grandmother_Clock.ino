@@ -22,6 +22,9 @@ LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
 
 int backlight_pin = 10;
 int dayofweek = 0;
+const long interval = 1000;
+unsigned long previousMillis = 0;
+int blinkOnOff = 0;
 
 // clear the screen
 int clearScreen()
@@ -38,13 +41,15 @@ void setup() {
 
 
   lcd.begin(16, 2);              // start the library
-  lcd.setCursor(0, 0);
-  lcd.print("GrandmotherClock"); // boot message
-  lcd.setCursor(0, 1);
-  lcd.print("By: Jason Nyland");
+
+  /*  // boot message
+    lcd.setCursor(0, 0);
+    lcd.print("GrandmotherClock");
+    lcd.setCursor(0, 1);
+    lcd.print("By: Jason Nyland");
+  */
   rtc.begin();
   setTime(rtc.getUnixTime(rtc.getTime()));
-  delay(3000);
   clearScreen();
 
 
@@ -99,7 +104,22 @@ void loop() {
     lcd.print(" ");
   }
   lcd.print(hourFormat12());
-  lcd.print(":");
+
+
+  /* uncomment for blinking separator on time
+    previousMillis = currentMillis;
+    if (blinkOnOff == 0) {
+      blinkOnOff = 1;
+    } else {
+      blinkOnOff = 0;
+    }
+  */
+  if (blinkOnOff == 0) {
+    lcd.print(":");
+  } else {
+    lcd.print(" ");
+  }
+
   if (minute() < 10) {
     lcd.print("0");
   }
@@ -113,11 +133,11 @@ void loop() {
   }
 
 
-/* Debug Date
-lcd.setCursor(0, 1);
-lcd.print(month());
-lcd.print(day());
-lcd.print(year());
-*/
+  /* Debug Date
+    lcd.setCursor(0, 1);
+    lcd.print(month());
+    lcd.print(day());
+    lcd.print(year());
+  */
 }
 
