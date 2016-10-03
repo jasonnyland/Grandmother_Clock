@@ -107,11 +107,14 @@ void loop() {
 
 
   /* uncomment for blinking separator on time
+    unsigned long currentMillis = millis();
+    if (currentMillis - previousMillis >= interval) {
     previousMillis = currentMillis;
     if (blinkOnOff == 0) {
       blinkOnOff = 1;
     } else {
       blinkOnOff = 0;
+    }
     }
   */
   if (blinkOnOff == 0) {
