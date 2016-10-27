@@ -5,14 +5,13 @@ A minimalistic LCD clock that only shows the day of week
 Grandmother Clock is a program that displays the weekday 
 in word form (eg "Tuesday") on a bright, uncluttered
 LCD display so that my grandmother can see what day it is
-while taking her medication, to avoid double-dosing while
-using a weekday pill box.  It's a clean, simple clock for 
+while taking her pills.  It's a clean, simple clock for 
 the forgetful!  Many clocks show the weekday, but they are
 optimized for battery life with dim LCDs, and are cluttered 
 with extra information.
 
 You will need:
-- Arduino Uno
+- Arduino
 - 16x2 LCD module
 - DS3231 RTC module
 
@@ -25,3 +24,9 @@ Features to add:
   - RTC module interrupt to save battery
 - Motion-activated backlight with PIR sensor
   - Investigate battery power once backlight can turn off
+
+Here is a prototype in a makeshift cardboard enclosure:
+<br>
+<a href="http://imgbox.com/DAsC2JMJ"><img src="https://4-t.imgbox.com/DAsC2JMJ.jpg"></a>
+<br>
+(click for big)
