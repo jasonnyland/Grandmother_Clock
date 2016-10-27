@@ -26,5 +26,6 @@ Features to add:
 - Motion-activated backlight with PIR sensor
   - Investigate battery power once backlight can turn off
 
-Here is a prototype in a makeshift cardboard enclosure:
+Here is a prototype in a makeshift cardboard enclosure (click for big):
+<br>
 <a href="http://imgbox.com/VWGHhewB"><img src="https://1-t.imgbox.com/VWGHhewB.jpg"></a>
