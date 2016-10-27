@@ -25,3 +25,6 @@ Features to add:
   - RTC module interrupt to save battery
 - Motion-activated backlight with PIR sensor
   - Investigate battery power once backlight can turn off
+
+Here is a prototype in a makeshift cardboard enclosure:
+<a href="http://imgbox.com/VWGHhewB"><img src="https://1-t.imgbox.com/VWGHhewB.jpg"></a>
