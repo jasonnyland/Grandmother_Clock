@@ -28,4 +28,4 @@ Features to add:
 
 Here is a prototype in a makeshift cardboard enclosure (click for big):
 <br>
-<a href="http://imgbox.com/VWGHhewB"><img src="https://1-t.imgbox.com/VWGHhewB.jpg"></a>
+<a href="http://imgbox.com/DAsC2JMJ"><img src="https://4-t.imgbox.com/DAsC2JMJ.jpg"></a>
